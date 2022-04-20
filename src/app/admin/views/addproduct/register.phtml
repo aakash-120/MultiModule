@@ -1,0 +1,6 @@
+<?php  include( APP_PATH.'/admin/views/index/index.phtml') ;?>
+<div class="alert alert-<?php echo isset($success) === true  ? 'success' : 'danger'; ?>">
+    <?php echo $message; ?>
+</div>
+
+<?php echo $this->tag->linkTo(['/admin', 'Go back', 'class' => 'btn btn-primary']); ?>
